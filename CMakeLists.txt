@@ -4,3 +4,7 @@ project(CS003A)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(CS003A main.cpp)
+
+target_link_libraries(CS003A sfml-graphics sfml-audio)
+
+find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)

@@ -213,6 +213,12 @@ CS003A_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CS003A_SOURCE_DIR:STATIC=/Users/shermanyan/CLionProjects/CS003A
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/opt/homebrew/lib/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
