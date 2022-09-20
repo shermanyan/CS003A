@@ -3,7 +3,7 @@ project(CS003A)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CS003A main.cpp)
+add_executable(CS003A Palindrome.cpp)
 
 target_link_libraries(CS003A sfml-graphics sfml-audio)
 
