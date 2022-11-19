@@ -1,0 +1,72 @@
+Sherman Yan Nov-7-2022
+-Chapter 14 Self-Test Exercises-
+
+1. Hip Hip Hurray
+
+3.
+
+void backward(int n){
+    if (n<10)
+        cout << n;
+    else{
+        cout << (n % 10);
+        backward(n / 10);
+    }
+}
+
+5.
+
+void writeDown(int n){
+  if(n >= 1){
+     std::cout << n--;
+     writeDown(n)
+  }
+}
+
+7.
+void cheers(int n){
+    while (n > 1){
+        cout << "Hip ";
+        n−−;
+    }
+    cout << "Hurray\n";
+}
+
+9.
+void backward(int n){
+    while (n >= 10){
+        cout << (n % 10);
+        n = n / 10;
+    }
+    cout << n;
+}
+
+11.
+
+if(3 >= 1){
+ std::cout << 3--;
+ writeDown(2)
+}
+
+if(2 >= 1){
+ std::cout << 2--;
+ writeDown(1)
+}
+
+if(1 >= 1){
+  std::cout << 1--;
+  writeDown(0)
+}
+
+13. 24, factorial
+
+15.
+
+int squares(int n){
+    if(n <= 1)
+        return 1;
+    else{
+        return squares(n-1) + n * n)
+    }
+
+}

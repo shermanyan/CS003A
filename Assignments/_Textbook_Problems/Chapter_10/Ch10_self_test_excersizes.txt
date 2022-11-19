@@ -1,0 +1,11 @@
+Sherman Yan Oct-9-2022
+-Chapter 10 Self-Test Exercises-
+
+1. 1 - double
+   2 - double
+   3 - int
+   4 - char
+   5 - char
+   6 - TermAccount
+
+2.
