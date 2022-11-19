@@ -5,46 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
-add_executable(pokerAnalysis
-        Assignments/Poker_Analysis/analysis/Deck.cpp
-        Assignments/Poker_Analysis/analysis/Deck.h
-        Assignments/Poker_Analysis/analysis/Card.cpp
-        Assignments/Poker_Analysis/analysis/Card.h
-        Assignments/Poker_Analysis/analysis/CardHandScorer.cpp
-        Assignments/Poker_Analysis/analysis/CardHandScorer.h
-        Assignments/Poker_Analysis/analysis/PokerScore.cpp
-        Assignments/Poker_Analysis/analysis/PokerScore.h
-        Assignments/Poker_Analysis/enums/suits.h
-        Assignments/Poker_Analysis/enums/ranks.h
-        Assignments/Poker_Analysis/poker_Main.cpp
-        Assignments/Poker_Analysis/analysis/CardHand.cpp
-        Assignments/Poker_Analysis/analysis/CardHand.h
-        Assignments/Poker_Analysis/enums/scores.h
-        Assignments/Poker_Analysis/display/drawables/DrawableCard.cpp
-        Assignments/Poker_Analysis/display/drawables/DrawableCard.h
-        Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.cpp
-        Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.h
-        Assignments/Poker_Analysis/display/helpers/PokerHands.cpp
-        Assignments/Poker_Analysis/display/helpers/PokerHands.h
-        Assignments/Poker_Analysis/display/PokerAnalysisDisplay.cpp
-        Assignments/Poker_Analysis/display/PokerAnalysisDisplay.h
-        Assignments/Poker_Analysis/display/DisplayWindow.cpp
-        Assignments/Poker_Analysis/display/DisplayWindow.h)
-
-target_link_libraries(pokerAnalysis sfml-graphics)
-
-add_executable(playingCard
-        Assignments/playingCard/card_main.cpp
-        Assignments/playingCard/topHatGuy.cpp
-        Assignments/playingCard/topHatGuy.h
-        Assignments/playingCard/Card.cpp
-        Assignments/playingCard/Card.h
-        Assignments/playingCard/RankEnum.h
-        Assignments/playingCard/SuitEnum.h
-        Assignments/playingCard/tophatguy_main.cpp )
-
-target_link_libraries(playingCard sfml-graphics)
-
 add_executable(sfmlApplication
         sfmlApplication/Application.cpp
         sfmlApplication/Application.h
@@ -52,15 +12,66 @@ add_executable(sfmlApplication
         sfmlApplication/EventHandleable.h
         sfmlApplication/Component.cpp
         sfmlApplication/Component.h
-        sfmlApplication/Updatable.cpp sfmlApplication/Updatable.h sfmlApplication/Square.cpp sfmlApplication/Square.h sfmlApplication/Project.cpp sfmlApplication/Project.h sfmlApplication/app_main.cpp)
+        sfmlApplication/Updatable.cpp
+        sfmlApplication/Updatable.h
+        sfmlApplication/Square.cpp
+        sfmlApplication/Square.h
+        sfmlApplication/Project.cpp
+        sfmlApplication/Project.h
+        sfmlApplication/app_main.cpp)
+
 target_link_libraries(sfmlApplication sfml-graphics)
 
-#add_executable(LinkedList
-#        Assignments/LinkedList/Node.cpp
-#        Assignments/LinkedList/Node.h
-#        Assignments/LinkedList/List.cpp
-#        Assignments/LinkedList/List.h
-#        Assignments/LinkedList/linkedlist_main.cpp)
+add_executable(Lists
+#        Assignments/Lists/LinkedList/linkedListTester.cpp
+        Assignments/Lists/LinkedList/Node.cpp
+        Assignments/Lists/LinkedList/Node.h
+        Assignments/Lists/LinkedList/List.cpp
+        Assignments/Lists/LinkedList/List.h
+        Assignments/Lists/Stacks/Stack.cpp
+        Assignments/Lists/Stacks/Stack.h
+        Assignments/Lists/Stacks/stackTester.cpp)
+
+#add_executable(pokerAnalysis
+#        Assignments/Poker_Analysis/analysis/Deck.cpp
+#        Assignments/Poker_Analysis/analysis/Deck.h
+#        Assignments/Poker_Analysis/analysis/Card.cpp
+#        Assignments/Poker_Analysis/analysis/Card.h
+#        Assignments/Poker_Analysis/analysis/CardHandScorer.cpp
+#        Assignments/Poker_Analysis/analysis/CardHandScorer.h
+#        Assignments/Poker_Analysis/analysis/PokerScore.cpp
+#        Assignments/Poker_Analysis/analysis/PokerScore.h
+#        Assignments/Poker_Analysis/enums/suits.h
+#        Assignments/Poker_Analysis/enums/ranks.h
+#        Assignments/Poker_Analysis/poker_Main.cpp
+#        Assignments/Poker_Analysis/analysis/CardHand.cpp
+#        Assignments/Poker_Analysis/analysis/CardHand.h
+#        Assignments/Poker_Analysis/enums/scores.h
+#        Assignments/Poker_Analysis/display/drawables/DrawableCard.cpp
+#        Assignments/Poker_Analysis/display/drawables/DrawableCard.h
+#        Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.cpp
+#        Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.h
+#        Assignments/Poker_Analysis/display/helpers/PokerHands.cpp
+#        Assignments/Poker_Analysis/display/helpers/PokerHands.h
+#        Assignments/Poker_Analysis/display/PokerAnalysisDisplay.cpp
+#        Assignments/Poker_Analysis/display/PokerAnalysisDisplay.h
+#        Assignments/Poker_Analysis/display/DisplayWindow.cpp
+#        Assignments/Poker_Analysis/display/DisplayWindow.h)
+#
+#target_link_libraries(pokerAnalysis sfml-graphics)
+#
+#add_executable(playingCard
+#        Assignments/playingCard/card_main.cpp
+#        Assignments/playingCard/topHatGuy.cpp
+#        Assignments/playingCard/topHatGuy.h
+#        Assignments/playingCard/Card.cpp
+#        Assignments/playingCard/Card.h
+#        Assignments/playingCard/RankEnum.h
+#        Assignments/playingCard/SuitEnum.h
+#        Assignments/playingCard/tophatguy_main.cpp )
+#
+#target_link_libraries(playingCard sfml-graphics)
+
 
 #add_executable(CH11_ProgrammingProject_1
 #        Assignments/_Textbook_Problems/Chapter_11/ProgrammingProject_1/PP1_main.cpp

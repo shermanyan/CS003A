@@ -1,0 +1,232 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: CS003A
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target sfmlApplication
+
+
+#############################################
+# Order-only phony target for sfmlApplication
+
+build cmake_object_order_depends_target_sfmlApplication: phony || CMakeFiles/sfmlApplication.dir
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/Application.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Application.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Application.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/EventHandleable.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/EventHandleable.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/EventHandleable.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/Component.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Component.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Component.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/Updatable.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Updatable.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Updatable.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/Square.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Square.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Square.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/Project.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Project.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Project.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+build CMakeFiles/sfmlApplication.dir/sfmlApplication/app_main.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/app_main.cpp || cmake_object_order_depends_target_sfmlApplication
+  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/app_main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sfmlApplication
+
+
+#############################################
+# Link the executable sfmlApplication
+
+build sfmlApplication: CXX_EXECUTABLE_LINKER__sfmlApplication_Debug CMakeFiles/sfmlApplication.dir/sfmlApplication/Application.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/EventHandleable.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Component.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Updatable.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Square.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Project.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/app_main.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib  /opt/homebrew/lib/libsfml-window.2.5.1.dylib  /opt/homebrew/lib/libsfml-system.2.5.1.dylib
+  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sfmlApplication
+  TARGET_PDB = sfmlApplication.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lists
+
+
+#############################################
+# Order-only phony target for Lists
+
+build cmake_object_order_depends_target_Lists: phony || CMakeFiles/Lists.dir
+
+build CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/Node.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/LinkedList/Node.cpp || cmake_object_order_depends_target_Lists
+  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/Node.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Lists.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList
+
+build CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/List.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/LinkedList/List.cpp || cmake_object_order_depends_target_Lists
+  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/List.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Lists.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList
+
+build CMakeFiles/Lists.dir/Assignments/Lists/Stacks/Stack.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/Stacks/Stack.cpp || cmake_object_order_depends_target_Lists
+  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/Stacks/Stack.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Lists.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/Stacks
+
+build CMakeFiles/Lists.dir/Assignments/Lists/Stacks/stackTester.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/Stacks/stackTester.cpp || cmake_object_order_depends_target_Lists
+  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/Stacks/stackTester.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Lists.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/Stacks
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lists
+
+
+#############################################
+# Link the executable Lists
+
+build Lists: CXX_EXECUTABLE_LINKER__Lists_Debug CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/Node.cpp.o CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/List.cpp.o CMakeFiles/Lists.dir/Assignments/Lists/Stacks/Stack.cpp.o CMakeFiles/Lists.dir/Assignments/Lists/Stacks/stackTester.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/Lists.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Lists
+  TARGET_PDB = Lists.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/shermanyan/CLionProjects/CS003A -B/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug
+
+build all: phony sfmlApplication Lists
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigDependencies.cmake /opt/homebrew/lib/cmake/SFML/SFMLConfigVersion.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets-release.cmake /opt/homebrew/lib/cmake/SFML/SFMLSharedTargets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

@@ -6,6 +6,8 @@
 #define CS003A_LIST_CPP
 
 #include "List.h"
+template<class T>
+const unsigned int List<T>::MAX_SIZE;
 
 template<class T>
 List<T>::List() {}
@@ -64,7 +66,8 @@ Node<T> *List<T>::createNode(T item) {
 
 template<class T>
 void List<T>::addFirstNode(T item) {
-    std::cout << "addFirst" << std::endl;
+//    std::cout << "addFirst" << std::endl;
+
     Node<T> *n = createNode(item);
     head = n;
     tail = n;
@@ -72,7 +75,8 @@ void List<T>::addFirstNode(T item) {
 
 template<class T>
 void List<T>::push_front(T item) {
-    std::cout << "Push " << item << " F" << std::endl;
+//    std::cout << "Push " << item << " F" << std::endl;
+
     if (head == nullptr)
         addFirstNode(item);
     else {
@@ -84,7 +88,7 @@ void List<T>::push_front(T item) {
 
 template<class T>
 void List<T>::push_back(T item) {
-    std::cout << "Push " << item << " B" << std::endl;
+//    std::cout << "Push " << item << " B" << std::endl;
 
     if (head == nullptr)
         addFirstNode(item);
@@ -106,25 +110,36 @@ const T &List<T>::front() const {
 }
 
 template<class T>
-void List<T>::pop_back() {
-    std::cout << "PopB" << std::endl;
+T List<T>::pop_back() {
+//    std::cout << "PopB" << std::endl;
 
-    Node<T> *n = head;
-    while(n->next != tail)
-        n = n->next;
+    if (tail!= nullptr) {
+        Node<T> *n = head;
+        while (n->next != tail)
+            n = n->next;
 
-    delete tail;
-    tail = n;
-    tail->next = nullptr;
+        T data = tail->data;
+        delete tail;
+        tail = n;
+        tail->next = nullptr;
+
+        return data;
+    } else
+        return NULL;
 }
 
 template<class T>
-void List<T>::pop_front() {
-    std::cout << "PopF" << std::endl;
+T List<T>::pop_front() {
+//    std::cout << "PopF" << std::endl;
 
-    Node<T> *n = head->next;
-    delete head;
-    head = n;
+    if(head != nullptr) {
+        Node<T> *n = head->next;
+        T data = head->data;
+        delete head;
+        head = n;
+        return data;
+    } else
+        return NULL;
 }
 
 template<class T>
@@ -151,8 +166,7 @@ bool List<T>::empty() {
 
 template<class T>
 void List<T>::insertBefore(T item, T before) {
-
-    std::cout << "Ins " << item << " before " << before << std::endl;
+//    std::cout << "Ins " << item << " before " << before << std::endl;
 
     Node<T> *n = createNode(item);
 
@@ -173,7 +187,7 @@ void List<T>::insertBefore(T item, T before) {
 
 template<class T>
 void List<T>::insertAfter(T item, T after) {
-    std::cout << "Ins " << item << " after " << after << std::endl;
+//    std::cout << "Ins " << item << " after " << after << std::endl;
 
     Node<T> *n = createNode(item);
 
@@ -193,8 +207,7 @@ void List<T>::insertAfter(T item, T after) {
 
 template<class T>
 void List<T>::remove(T item) {
-
-    std::cout << "Remove " << item << std::endl;
+//    std::cout << "Remove " << item << std::endl;
 
     if (head->data == item) {
         pop_front();
@@ -244,8 +257,7 @@ List<T> &List<T>::operator=(const List<T> &list) {
 
 template<class T>
 void List<T>::operator+=(T item) {
-
-    std::cout << "operator += ";
+//    std::cout << "operator += ";
     push_back(item);
 }
 
@@ -272,5 +284,10 @@ std::istream &operator>>(std::istream &ins, List<T> &list) {
     list.push_back(item);
     return ins;
 }
+
+//template<class T>
+//std::ostream &List<T>::print(std::ostream &out) const {
+//    return out;
+//}
 
 #endif

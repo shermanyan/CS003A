@@ -10,6 +10,7 @@
 template<class T>
 class List {
 private:
+    static const unsigned int MAX_SIZE = 100;
     Node<T> *head = nullptr;
     Node<T> *tail = nullptr;
 
@@ -30,8 +31,8 @@ public:
     T& front();
     const T& front() const;
 
-    void pop_back();
-    void pop_front();
+    T pop_back();
+    T pop_front();
 
     int size() const;
     bool empty();
@@ -51,6 +52,7 @@ public:
     template<class S>
     friend std::istream& operator >>(std::istream& ins , List<S>& list);
 
+//    virtual std::ostream& print(std::ostream& out) const;
 };
 
 #include "List.cpp"

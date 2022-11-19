@@ -1,0 +1,7 @@
+# ninja log v5
+0	288	1665690547399694718	CMakeFiles/ProgrammingProject_5.dir/ProgrammingProject_5/PP5_functions.cpp.o	5d1a805fcad9ea7a
+0	290	1665690547401306446	CMakeFiles/ProgrammingProject_5.dir/ProgrammingProject_5/PP5_main.cpp.o	90bd6fc987b804e5
+290	342	1665690547455161245	ProgrammingProject_5	3e93165c162b10e2
+0	238	1665690551823549928	CMakeFiles/ProgrammingProject_6.dir/ProgrammingProject_6/PP6_main.cpp.o	50febc49e1eb9429
+0	249	1665690551834510235	CMakeFiles/ProgrammingProject_6.dir/ProgrammingProject_6/PP6_functions.cpp.o	b12355a7e1eaea09
+249	288	1665690551875119300	ProgrammingProject_6	208acfc8c4fb4a0
