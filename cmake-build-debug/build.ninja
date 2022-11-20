@@ -38,128 +38,175 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target sfmlApplication
+# Object build statements for EXECUTABLE target RPN
 
 
 #############################################
-# Order-only phony target for sfmlApplication
+# Order-only phony target for RPN
 
-build cmake_object_order_depends_target_sfmlApplication: phony || CMakeFiles/sfmlApplication.dir
+build cmake_object_order_depends_target_RPN: phony || CMakeFiles/RPN.dir
 
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/Application.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Application.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Application.cpp.o.d
+build CMakeFiles/RPN.dir/Assignments/RPN/rpn_main.cpp.o: CXX_COMPILER__RPN_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/RPN/rpn_main.cpp || cmake_object_order_depends_target_RPN
+  DEP_FILE = CMakeFiles/RPN.dir/Assignments/RPN/rpn_main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+  OBJECT_DIR = CMakeFiles/RPN.dir
+  OBJECT_FILE_DIR = CMakeFiles/RPN.dir/Assignments/RPN
 
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/EventHandleable.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/EventHandleable.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/EventHandleable.cpp.o.d
+build CMakeFiles/RPN.dir/Assignments/RPN/RPN.cpp.o: CXX_COMPILER__RPN_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/RPN/RPN.cpp || cmake_object_order_depends_target_RPN
+  DEP_FILE = CMakeFiles/RPN.dir/Assignments/RPN/RPN.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
-
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/Component.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Component.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Component.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
-
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/Updatable.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Updatable.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Updatable.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
-
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/Square.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Square.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Square.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
-
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/Project.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/Project.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/Project.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
-
-build CMakeFiles/sfmlApplication.dir/sfmlApplication/app_main.cpp.o: CXX_COMPILER__sfmlApplication_Debug /Users/shermanyan/CLionProjects/CS003A/sfmlApplication/app_main.cpp || cmake_object_order_depends_target_sfmlApplication
-  DEP_FILE = CMakeFiles/sfmlApplication.dir/sfmlApplication/app_main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  INCLUDES = -isystem /opt/homebrew/include
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
-  OBJECT_FILE_DIR = CMakeFiles/sfmlApplication.dir/sfmlApplication
+  OBJECT_DIR = CMakeFiles/RPN.dir
+  OBJECT_FILE_DIR = CMakeFiles/RPN.dir/Assignments/RPN
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target sfmlApplication
+# Link build statements for EXECUTABLE target RPN
 
 
 #############################################
-# Link the executable sfmlApplication
+# Link the executable RPN
 
-build sfmlApplication: CXX_EXECUTABLE_LINKER__sfmlApplication_Debug CMakeFiles/sfmlApplication.dir/sfmlApplication/Application.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/EventHandleable.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Component.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Updatable.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Square.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/Project.cpp.o CMakeFiles/sfmlApplication.dir/sfmlApplication/app_main.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
+build RPN: CXX_EXECUTABLE_LINKER__RPN_Debug CMakeFiles/RPN.dir/Assignments/RPN/rpn_main.cpp.o CMakeFiles/RPN.dir/Assignments/RPN/RPN.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/RPN.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = RPN
+  TARGET_PDB = RPN.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Stacks
+
+
+#############################################
+# Order-only phony target for Stacks
+
+build cmake_object_order_depends_target_Stacks: phony || CMakeFiles/Stacks.dir
+
+build CMakeFiles/Stacks.dir/Assignments/Lists/Stacks/stackTester.cpp.o: CXX_COMPILER__Stacks_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/Stacks/stackTester.cpp || cmake_object_order_depends_target_Stacks
+  DEP_FILE = CMakeFiles/Stacks.dir/Assignments/Lists/Stacks/stackTester.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Stacks.dir
+  OBJECT_FILE_DIR = CMakeFiles/Stacks.dir/Assignments/Lists/Stacks
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stacks
+
+
+#############################################
+# Link the executable Stacks
+
+build Stacks: CXX_EXECUTABLE_LINKER__Stacks_Debug CMakeFiles/Stacks.dir/Assignments/Lists/Stacks/stackTester.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/Stacks.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Stacks
+  TARGET_PDB = Stacks.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pokerAnalysis
+
+
+#############################################
+# Order-only phony target for pokerAnalysis
+
+build cmake_object_order_depends_target_pokerAnalysis: phony || CMakeFiles/pokerAnalysis.dir
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/Deck.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/analysis/Deck.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/Deck.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/Card.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/analysis/Card.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/Card.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/CardHandScorer.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/analysis/CardHandScorer.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/CardHandScorer.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/PokerScore.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/analysis/PokerScore.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/PokerScore.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/poker_Main.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/poker_Main.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/poker_Main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/CardHand.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/analysis/CardHand.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/CardHand.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables/DrawableCard.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/display/drawables/DrawableCard.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables/DrawableCard.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/helpers/PokerHands.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/display/helpers/PokerHands.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/helpers/PokerHands.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/helpers
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/PokerAnalysisDisplay.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/display/PokerAnalysisDisplay.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/PokerAnalysisDisplay.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display
+
+build CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/DisplayWindow.cpp.o: CXX_COMPILER__pokerAnalysis_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Poker_Analysis/display/DisplayWindow.cpp || cmake_object_order_depends_target_pokerAnalysis
+  DEP_FILE = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/DisplayWindow.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
+  INCLUDES = -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
+  OBJECT_FILE_DIR = CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pokerAnalysis
+
+
+#############################################
+# Link the executable pokerAnalysis
+
+build pokerAnalysis: CXX_EXECUTABLE_LINKER__pokerAnalysis_Debug CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/Deck.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/Card.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/CardHandScorer.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/PokerScore.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/poker_Main.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/analysis/CardHand.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables/DrawableCard.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/drawables/DrawablePokerHand.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/helpers/PokerHands.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/PokerAnalysisDisplay.cpp.o CMakeFiles/pokerAnalysis.dir/Assignments/Poker_Analysis/display/DisplayWindow.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib  /opt/homebrew/lib/libsfml-window.2.5.1.dylib  /opt/homebrew/lib/libsfml-system.2.5.1.dylib
-  OBJECT_DIR = CMakeFiles/sfmlApplication.dir
+  OBJECT_DIR = CMakeFiles/pokerAnalysis.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = sfmlApplication
-  TARGET_PDB = sfmlApplication.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Lists
-
-
-#############################################
-# Order-only phony target for Lists
-
-build cmake_object_order_depends_target_Lists: phony || CMakeFiles/Lists.dir
-
-build CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/Node.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/LinkedList/Node.cpp || cmake_object_order_depends_target_Lists
-  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/Node.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Lists.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList
-
-build CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/List.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/LinkedList/List.cpp || cmake_object_order_depends_target_Lists
-  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/List.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Lists.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/LinkedList
-
-build CMakeFiles/Lists.dir/Assignments/Lists/Stacks/Stack.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/Stacks/Stack.cpp || cmake_object_order_depends_target_Lists
-  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/Stacks/Stack.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Lists.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/Stacks
-
-build CMakeFiles/Lists.dir/Assignments/Lists/Stacks/stackTester.cpp.o: CXX_COMPILER__Lists_Debug /Users/shermanyan/CLionProjects/CS003A/Assignments/Lists/Stacks/stackTester.cpp || cmake_object_order_depends_target_Lists
-  DEP_FILE = CMakeFiles/Lists.dir/Assignments/Lists/Stacks/stackTester.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Lists.dir
-  OBJECT_FILE_DIR = CMakeFiles/Lists.dir/Assignments/Lists/Stacks
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Lists
-
-
-#############################################
-# Link the executable Lists
-
-build Lists: CXX_EXECUTABLE_LINKER__Lists_Debug CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/Node.cpp.o CMakeFiles/Lists.dir/Assignments/Lists/LinkedList/List.cpp.o CMakeFiles/Lists.dir/Assignments/Lists/Stacks/Stack.cpp.o CMakeFiles/Lists.dir/Assignments/Lists/Stacks/stackTester.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
-  OBJECT_DIR = CMakeFiles/Lists.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = Lists
-  TARGET_PDB = Lists.dbg
+  TARGET_FILE = pokerAnalysis
+  TARGET_PDB = pokerAnalysis.dbg
 
 
 #############################################
@@ -195,7 +242,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug
 
-build all: phony sfmlApplication Lists
+build all: phony RPN Stacks pokerAnalysis
 
 # =============================================================================
 # Built-in targets

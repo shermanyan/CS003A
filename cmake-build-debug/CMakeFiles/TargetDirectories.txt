@@ -1,4 +1,5 @@
-/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/sfmlApplication.dir
-/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/Lists.dir
+/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/RPN.dir
+/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/Stacks.dir
+/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/pokerAnalysis.dir
 /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/shermanyan/CLionProjects/CS003A/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -52,7 +52,7 @@ public:
     template<class S>
     friend std::istream& operator >>(std::istream& ins , List<S>& list);
 
-//    virtual std::ostream& print(std::ostream& out) const;
+
 };
 
 #include "List.cpp"

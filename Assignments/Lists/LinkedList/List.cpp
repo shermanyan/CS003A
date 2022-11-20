@@ -101,12 +101,14 @@ void List<T>::push_back(T item) {
 
 template<class T>
 T &List<T>::front() {
-    return head->data;
+    if (head != nullptr)
+        return head->data;
 }
 
 template<class T>
 const T &List<T>::front() const {
-    return head->data;
+    if (head != nullptr)
+        return head->data;
 }
 
 template<class T>
@@ -285,9 +287,6 @@ std::istream &operator>>(std::istream &ins, List<T> &list) {
     return ins;
 }
 
-//template<class T>
-//std::ostream &List<T>::print(std::ostream &out) const {
-//    return out;
-//}
+
 
 #endif
