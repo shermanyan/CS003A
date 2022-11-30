@@ -19,5 +19,4 @@ public:
 
 };
 
-
 #endif //CS003A_RPN_H
