@@ -1,0 +1,18 @@
+//
+// Created by Sherman Yan on 12/9/22.
+//
+
+#ifndef FINALPROJECT_APPSENUM_H
+#define FINALPROJECT_APPSENUM_H
+enum AppsEnum{
+    APP_HOME,
+    APP_GREEN_BALL,
+    APP_BOUNCING_BALL,
+    APP_PONG,
+    APP_TOP_HAT_GUY,
+    APP_PLAYING_CARD,
+    APP_POKER_ANALYSIS,
+    APP_OCEAN_CLEANUP,
+    APP_LAST_APP,
+};
+#endif //FINALPROJECT_APPSENUM_H

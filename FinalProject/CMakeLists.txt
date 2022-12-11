@@ -1,0 +1,119 @@
+cmake_minimum_required(VERSION 3.23)
+project(FinalProject)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(Apps/AppDriver)
+include_directories(Apps/BouncingObject)
+include_directories(Apps/CardApps/Drawables)
+include_directories(Apps/CardApps/enums)
+include_directories(Apps/CardApps/PlayingCard)
+include_directories(Apps/CardApps/PokerAnalysis)
+include_directories(Apps/CardApps/PokerAnalysisDisplay)
+include_directories(Apps/CardApps/PokerHands)
+include_directories(Apps/GameSelector)
+include_directories(Apps/GreenBall)
+include_directories(Apps/Pong)
+include_directories(Apps/TopHatGuy)
+include_directories(Resources)
+include_directories(Resources/enums)
+include_directories(SFMLGame)
+include_directories(SFMLGame/ButtonComponent)
+include_directories(SFMLGame/Buttons)
+
+add_executable(FinalProject
+        Apps/AppDriver/AppDriver.cpp
+        Apps/AppDriver/AppDriver.h
+        Apps/AppDriver/AppsEnum.h
+        Apps/BouncingObject/App_BouncingObject.cpp
+        Apps/BouncingObject/App_BouncingObject.h
+        Apps/BouncingObject/Ball.cpp
+        Apps/BouncingObject/Ball.h
+        Apps/BouncingObject/BouncingObject.cpp
+        Apps/BouncingObject/BouncingObject.h
+        Apps/CardApps/Drawables/DrawableCard.cpp
+        Apps/CardApps/Drawables/DrawableCard.h
+        Apps/CardApps/Drawables/DrawablePokerHand.cpp
+        Apps/CardApps/Drawables/DrawablePokerHand.h
+        Apps/CardApps/enums/ranks.h
+        Apps/CardApps/enums/scores.h
+        Apps/CardApps/enums/suits.h
+        Apps/CardApps/PlayingCard/App_PlayingCard.cpp
+        Apps/CardApps/PlayingCard/App_PlayingCard.h
+        Apps/CardApps/PlayingCard/PlayingCard.cpp
+        Apps/CardApps/PlayingCard/PlayingCard.h
+        Apps/CardApps/PokerAnalysis/Analysis.cpp
+        Apps/CardApps/PokerAnalysis/Analysis.h
+        Apps/CardApps/PokerAnalysis/Card.cpp
+        Apps/CardApps/PokerAnalysis/Card.h
+        Apps/CardApps/PokerAnalysis/CardHand.cpp
+        Apps/CardApps/PokerAnalysis/CardHand.h
+        Apps/CardApps/PokerAnalysis/CardHandScorer.cpp
+        Apps/CardApps/PokerAnalysis/CardHandScorer.h
+        Apps/CardApps/PokerAnalysis/Deck.cpp
+        Apps/CardApps/PokerAnalysis/Deck.h
+        Apps/CardApps/PokerAnalysis/PokerScore.cpp
+        Apps/CardApps/PokerAnalysis/PokerScore.h
+        Apps/CardApps/PokerAnalysisDisplay/App_PokerAnalysis.cpp
+        Apps/CardApps/PokerAnalysisDisplay/App_PokerAnalysis.h
+        Apps/CardApps/PokerAnalysisDisplay/PokerAnalysisDisplay.cpp
+        Apps/CardApps/PokerAnalysisDisplay/PokerAnalysisDisplay.h
+        Apps/CardApps/PokerHands/PokerHands.cpp
+        Apps/CardApps/PokerHands/PokerHands.h
+        Apps/GameSelector/App_GameSelector.cpp
+        Apps/GameSelector/App_GameSelector.h
+        Apps/GameSelector/GameSelector.cpp
+        Apps/GameSelector/GameSelector.h
+        Apps/GreenBall/App_GreenBall.cpp
+        Apps/GreenBall/App_GreenBall.h
+        Apps/GreenBall/GreenBall.cpp
+        Apps/GreenBall/GreenBall.h
+        Apps/Pong/App_Pong.cpp
+        Apps/Pong/App_Pong.h
+        Apps/Pong/Paddle.cpp
+        Apps/Pong/Paddle.h
+        Apps/Pong/PingPongBall.cpp
+        Apps/Pong/PingPongBall.h
+        Apps/Pong/Pong.cpp
+        Apps/Pong/Pong.h
+        Apps/TopHatGuy/App_TopHatGuy.cpp
+        Apps/TopHatGuy/App_TopHatGuy.h
+        Apps/TopHatGuy/topHatGuy.cpp
+        Apps/TopHatGuy/topHatGuy.h
+        Apps/TopHatGuy/topHatGuyComponent.cpp
+        Apps/TopHatGuy/topHatGuyComponent.h
+        Resources/enums/FontsEnum.h
+        Resources/enums/statesEnum.h
+        Resources/enums/TexturesEnum.h
+        Resources/Fonts.cpp
+        Resources/Fonts.h
+        Resources/States.cpp
+        Resources/States.h
+        Resources/Textures.cpp
+        Resources/Textures.h
+        SFMLGame/ButtonComponent/AppSwitchButton.cpp
+        SFMLGame/ButtonComponent/AppSwitchButton.h
+        SFMLGame/Buttons/ButtonBase.cpp
+        SFMLGame/Buttons/ButtonBase.h
+        SFMLGame/Buttons/AppPreview.cpp
+        SFMLGame/Buttons/AppPreview.h
+        SFMLGame/Buttons/HomeButton.cpp
+        SFMLGame/Buttons/HomeButton.h
+        SFMLGame/AppComponent.h
+        SFMLGame/DisplayableApplication.cpp
+        SFMLGame/DisplayableApplication.h
+        SFMLGame/EventHandleable.h
+        SFMLGame/MouseEvents.cpp
+        SFMLGame/MouseEvents.h
+        SFMLGame/Position.cpp
+        SFMLGame/Position.h
+        SFMLGame/ScrollableContainer.cpp
+        SFMLGame/ScrollableContainer.h
+        SFMLGame/ScrollEnum.h
+        SFMLGame/SpriteImage.cpp
+        SFMLGame/SpriteImage.h
+        SFMLGame/Updatable.h
+        main.cpp)
+
+find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+target_link_libraries(FinalProject sfml-graphics)
