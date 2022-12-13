@@ -20,6 +20,8 @@ private:
     HomeButton h;
     bool exitable = true;
 
+    void setHomeButton(const sf::Vector2u& window);
+
 public:
     DisplayableApplication();
     DisplayableApplication(const std::string& windowName);

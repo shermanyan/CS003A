@@ -47,19 +47,19 @@ sf::Texture &AppDetail::getTexture(AppsEnum app) {
 std::string AppDetail::getAppSummary(AppsEnum app) {
     switch (app) {
         case APP_GREEN_BALL:
-            return "Lorem Ipsum";
+            return "First SFML Project! Drawing a green ball";
         case APP_BOUNCING_BALL:
-            return "Lorem Ipsum";
+            return "Learning how to make object bounce inside a boundary.";
         case APP_PONG:
-            return "Lorem Ipsum";
+            return "Knock off ping pong game with SFML!";
         case APP_TOP_HAT_GUY:
-            return "Lorem Ipsum";
+            return "Creating objects inheriting sf::Drawables";
         case APP_PLAYING_CARD:
-            return "Lorem Ipsum";
+            return "Learning Sprites/Textures, and Text/Fonts";
         case APP_POKER_ANALYSIS:
-            return "Lorem Ipsum";
+            return "Displaying Calculated Statistics with SFML";
         case APP_OCEAN_CLEANUP:
-            return "Lorem Ipsum";
+            return "Final Game!";
         case APP_LAST_APP:
             return "";
     }

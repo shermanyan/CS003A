@@ -31,9 +31,8 @@ void DisplayableApplication::run(sf::RenderWindow &window) {
 
     window.setTitle(windowName);
 
-    float margin = 10;
     h.setOrigin(h.getLocalBounds().width, 0);
-    h.setPosition(window.getSize().x - margin,margin);
+    setHomeButton(window.getSize());
 
     while (window.isOpen()) {
         sf::Event event;
@@ -44,6 +43,7 @@ void DisplayableApplication::run(sf::RenderWindow &window) {
             if (sf::Event::Resized == event.type) {
                 sf::FloatRect eV(0, 0, event.size.width, event.size.height);
                 window.setView(sf::View(eV));
+                setHomeButton(window.getSize());
             }
 
 
@@ -77,6 +77,12 @@ void DisplayableApplication::setWindowSize(const sf::Vector2u &windowSize) {
 
 void DisplayableApplication::disableExit() {
     exitable = false;
+}
+
+void DisplayableApplication::setHomeButton(const sf::Vector2u &window) {
+    float margin = 10;
+    h.setPosition(window.x - margin,margin);
+
 }
 
 
