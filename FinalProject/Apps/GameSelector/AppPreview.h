@@ -18,7 +18,6 @@ class AppPreview: public sf::Drawable, public sf::Transformable {
 private:
     SpriteImage img;
     sf::RectangleShape border;
-    AppsEnum app;
     sf::Text appName;
 
     bool selected = false;

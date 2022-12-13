@@ -33,7 +33,6 @@ void DetailedAppPreview::setBackgroundWidth(float width) {
 void DetailedAppPreview::update(AppsEnum app) {
     curApp = app;
     preview.setTexture(AppDetail::getTexture(app));
-    preview.setColor(sf::Color(100,100,100));
     gameTitle.setString(AppDetail::getAppName(app));
     summary.setString(AppDetail::getAppSummary(app));
 }

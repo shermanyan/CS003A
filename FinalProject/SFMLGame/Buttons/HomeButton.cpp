@@ -6,6 +6,6 @@
 
 HomeButton::HomeButton() {
     setTexture(Textures::getTexture(HOME));
-    setSize({20, 20});
+    setSize({50, 50});
 }
 

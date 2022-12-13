@@ -5,7 +5,7 @@
 #include "Play.h"
 
 Play::Play() {
-    button.setSize({150, 80});
+    button.setSize({150, 75});
     play.setFont(Fonts::getFont(SONO_BOLD));
     play.setCharacterSize(button.getSize().y/2);
     play.setString("PLAY");
@@ -24,9 +24,9 @@ void Play::setSize(const sf::Vector2f &size) {
 void Play::hover(const sf::RenderWindow &window) {
 
     if(MouseEvents::isHover(button,window))
-        button.setFillColor(sf::Color(200,200,200));
+        button.setFillColor({180, 180, 180});
     else
-        button.setFillColor(sf::Color::White);
+        button.setFillColor({220,220,220});
 
 }
 

@@ -4,6 +4,7 @@
 
 enum TextureEnums{
     HOME,
+    SKIRT,
     CLUB,
     DIAMOND,
     HEART,

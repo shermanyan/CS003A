@@ -95,8 +95,8 @@ add_executable(FinalProject
         SFMLGame/ButtonComponent/AppSwitchButton.h
         SFMLGame/Buttons/ButtonBase.cpp
         SFMLGame/Buttons/ButtonBase.h
-        SFMLGame/Buttons/AppPreview.cpp
-        SFMLGame/Buttons/AppPreview.h
+        Apps/GameSelector/AppPreview.cpp
+        Apps/GameSelector/AppPreview.h
         SFMLGame/Buttons/HomeButton.cpp
         SFMLGame/Buttons/HomeButton.h
         SFMLGame/AppComponent.h
@@ -113,7 +113,7 @@ add_executable(FinalProject
         SFMLGame/SpriteImage.cpp
         SFMLGame/SpriteImage.h
         SFMLGame/Updatable.h
-        main.cpp SFMLGame/Buttons/DetailedAppPreview.cpp SFMLGame/Buttons/DetailedAppPreview.h Apps/AppDriver/AppDetail.cpp Apps/AppDriver/AppDetail.h SFMLGame/Buttons/Play.cpp SFMLGame/Buttons/Play.h)
+        main.cpp Apps/GameSelector/DetailedAppPreview.cpp Apps/GameSelector/DetailedAppPreview.h Apps/AppDriver/AppDetail.cpp Apps/AppDriver/AppDetail.h Apps/GameSelector/Play.cpp Apps/GameSelector/Play.h)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 target_link_libraries(FinalProject sfml-graphics)

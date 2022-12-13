@@ -17,6 +17,7 @@ private:
     float margins = 50;
 
     Play play;
+    SpriteImage skirt;
     DetailedAppPreview detailedPreview;
     ScrollableContainer<AppPreview> container;
     std::map<AppsEnum,AppPreview> previews;

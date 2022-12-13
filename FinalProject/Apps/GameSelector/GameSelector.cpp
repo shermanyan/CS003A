@@ -8,6 +8,8 @@ void GameSelector::draw(sf::RenderTarget &target, sf::RenderStates states) const
     if (!detailedPreview.checkStates(HIDDEN))
         target.draw(detailedPreview,states);
 
+    target.draw(skirt);
+
     if (!play.checkStates(HIDDEN))
         target.draw(play,states);
 
@@ -48,10 +50,11 @@ void GameSelector::eventHandler(sf::RenderWindow &window, const sf::Event &event
 void GameSelector::update(const sf::RenderWindow &window) {
     container.update();
     detailedPreview.setBackgroundWidth(window.getSize().x);
+    skirt.setPosition(0,window.getSize().y - skirt.getGlobalBounds().height);
+    skirt.setSize((sf::Vector2f)window.getSize());
 }
 
 GameSelector::GameSelector() {
-
 
     for (int i = 1; i < APP_LAST_APP; ++i) {
         previews.emplace(AppsEnum(i),AppsEnum(i));
@@ -61,13 +64,14 @@ GameSelector::GameSelector() {
     sf::FloatRect cSize = container.getGlobalBounds();
     container.setPosition(50,windowSize.y - cSize.height - margins);
 
-    detailedPreview.setPosition(100,100);
+    detailedPreview.setPosition(80,80);
     detailedPreview.setState(HIDDEN,true);
 
     play.setState(HIDDEN,true);
-
     setPlayButtonPos();
 
+    skirt.setTexture(Textures::getTexture(SKIRT));
+    skirt.setColor({100, 100, 100});
 }
 
 void GameSelector::resetView(sf::RenderWindow& window) {
@@ -78,7 +82,7 @@ void GameSelector::resetView(sf::RenderWindow& window) {
 
 void GameSelector::setPlayButtonPos() {
 
-    play.setPosition({100, 0});
+    play.setPosition({80, 0});
     Position::top(play,container,80);
 
 }

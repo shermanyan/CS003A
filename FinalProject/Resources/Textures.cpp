@@ -37,8 +37,8 @@ std::string Textures::getPath(TextureEnums texture) {
             return "Resources/textures/gamePreviews/pong.png";
         case GP_TOP_HAT_GUY:
             return "Resources/textures/gamePreviews/tophatguy.png";
-        case LAST_IMG:
-            return "";
+        case SKIRT:
+            return "Resources/textures/skirt.png";
     }
 }
 
