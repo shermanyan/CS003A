@@ -5,6 +5,6 @@
 #include "App_Pong.h"
 
 App_Pong::App_Pong() :
-DisplayableApplication{"Pong"}{
+DisplayableApplication{"Pong",sf::Color(119, 176, 83)}{
     addComponent(p);
 }

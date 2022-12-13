@@ -7,5 +7,7 @@ enum FontsEnum{
     OPEN_SANS,
     PTSERIF_BOLD,
     SONO_BOLD,
+    TITAN_ONE,
+    LILITA_ONE,
     LAST_FONT
 };

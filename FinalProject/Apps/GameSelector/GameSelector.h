@@ -10,16 +10,20 @@
 #include <map>
 #include "AppDriver.h"
 #include "AppPreview.h"
-
-
+#include "DetailedAppPreview.h"
+#include "Play.h"
 class GameSelector: public AppComponent{
 private:
+    float margins = 50;
+
+    Play play;
+    DetailedAppPreview detailedPreview;
     ScrollableContainer<AppPreview> container;
     std::map<AppsEnum,AppPreview> previews;
     sf::Vector2u windowSize = {1920,1080};
-    void resetView(sf::RenderWindow &window);
 
-    float margins = 50;
+    void resetView(sf::RenderWindow &window);
+    void setPlayButtonPos();
 public:
     GameSelector();
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;

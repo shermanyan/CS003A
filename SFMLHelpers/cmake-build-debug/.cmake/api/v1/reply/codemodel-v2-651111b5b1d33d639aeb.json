@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SFMLHelpers",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "SFMLHelpers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SFMLHelpers-Debug-5689d956d69c3ea4097e.json",
+					"name" : "SFMLHelpers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clock::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clock-Debug-bc54f5398077f07105cd.json",
+					"name" : "clock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fallingobj::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fallingobj-Debug-0301dc460a3d5b44f5f0.json",
+					"name" : "fallingobj",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scroll::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scroll-Debug-842a224c0105112bac74.json",
+					"name" : "scroll",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug",
+		"source" : "/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -113,7 +113,7 @@ add_executable(FinalProject
         SFMLGame/SpriteImage.cpp
         SFMLGame/SpriteImage.h
         SFMLGame/Updatable.h
-        main.cpp)
+        main.cpp SFMLGame/Buttons/DetailedAppPreview.cpp SFMLGame/Buttons/DetailedAppPreview.h Apps/AppDriver/AppDetail.cpp Apps/AppDriver/AppDetail.h SFMLGame/Buttons/Play.cpp SFMLGame/Buttons/Play.h)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 target_link_libraries(FinalProject sfml-graphics)

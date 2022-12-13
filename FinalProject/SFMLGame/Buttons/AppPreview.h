@@ -12,6 +12,7 @@
 #include "Position.h"
 #include <string>
 #include "MouseEvents.h"
+#include "AppDetail.h"
 
 class AppPreview: public sf::Drawable, public sf::Transformable {
 private:
@@ -21,10 +22,6 @@ private:
     sf::Text appName;
 
     bool selected = false;
-
-    static sf::Texture& getTexture(AppsEnum app);
-
-    static std::string getName(AppsEnum app);
 public:
     AppPreview(AppsEnum app);
 

@@ -16,3 +16,13 @@ void SpriteImage::setSize(const sf::Vector2f& size) {
 
     setScale(scale);
 }
+
+void SpriteImage::setWidth(float width) {
+    sf::FloatRect curSize = getLocalBounds();
+    float scale;
+
+    scale = (width/curSize.width);
+
+    setScale(scale,scale);
+
+}

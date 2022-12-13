@@ -23,8 +23,11 @@ std::string Fonts::getPath(FontsEnum font) {
             return "Resources/fonts/PTSerif-Bold.ttf";
         case SONO_BOLD:
             return "Resources/fonts/Sono-Bold.ttf";
-        case LAST_FONT:
-            break;
+        case TITAN_ONE:
+            return "Resources/fonts/TitanOne-Regular.ttf";;
+        case LILITA_ONE:
+            return "Resources/fonts/LilitaOne-Regular.ttf";;
+
     }
 }
 

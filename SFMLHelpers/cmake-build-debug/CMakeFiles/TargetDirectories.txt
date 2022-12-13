@@ -1,0 +1,6 @@
+/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug/CMakeFiles/SFMLHelpers.dir
+/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug/CMakeFiles/clock.dir
+/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug/CMakeFiles/fallingobj.dir
+/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug/CMakeFiles/scroll.dir
+/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/shermanyan/CLionProjects/CS003A/SFMLHelpers/cmake-build-debug/CMakeFiles/rebuild_cache.dir

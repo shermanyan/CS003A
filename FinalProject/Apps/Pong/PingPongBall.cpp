@@ -6,7 +6,7 @@
 
 PingPongBall::PingPongBall() {
     setRadius(25);
-    setFillColor(sf::Color::Green);
+    setFillColor(sf::Color(245, 245, 245));
 }
 
 void PingPongBall::bounce(const sf::Vector2u &windowSize, const std::vector<sf::FloatRect> &bounceSurfaces) {

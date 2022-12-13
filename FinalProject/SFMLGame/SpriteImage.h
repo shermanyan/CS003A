@@ -11,6 +11,8 @@ class SpriteImage:public sf::Sprite{
 public:
     SpriteImage();
     void setSize(const sf::Vector2f& size);
+    void setWidth(float width);
+
 };
 
 

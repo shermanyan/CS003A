@@ -31,6 +31,10 @@ void DisplayableApplication::run(sf::RenderWindow &window) {
 
     window.setTitle(windowName);
 
+    float margin = 10;
+    h.setOrigin(h.getLocalBounds().width, 0);
+    h.setPosition(window.getSize().x - margin,margin);
+
     while (window.isOpen()) {
         sf::Event event;
 

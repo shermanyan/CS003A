@@ -14,6 +14,7 @@ bool MouseEvents::isHover(const T &Obj, const sf::RenderWindow &window) {
 
 template<class T>
 bool MouseEvents::isClick(const T &Obj, const sf::RenderWindow &window) {
+//    std::cout << isHover(Obj, window);
     return isHover(Obj, window) && sf::Mouse::isButtonPressed(sf::Mouse::Left);
 }
 

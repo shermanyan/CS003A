@@ -14,6 +14,10 @@ void Pong::eventHandler(sf::RenderWindow &window, const sf::Event &event) {
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::R))
         b.setPosition(windowSize.x/2 - b.getRadius(), windowSize.y/2 -b.getRadius());
 
+    if(event.type == sf::Event::EventType::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::P))
+        play = !play;
+
+
 }
 
 void Pong::update(const sf::RenderWindow &window) {
@@ -24,7 +28,8 @@ void Pong::update(const sf::RenderWindow &window) {
     pad2.movePaddle(windowSize, Paddle::direction::up, sf::Keyboard::W);
     pad2.movePaddle(windowSize, Paddle::direction::down, sf::Keyboard::S);
 
-    b.bounce(windowSize,std::vector<sf::FloatRect>({pad1.getGlobalBounds(), pad2.getGlobalBounds()}));
+    if (play)
+        b.bounce(windowSize,std::vector<sf::FloatRect>({pad1.getGlobalBounds(), pad2.getGlobalBounds()}));
 }
 
 void Pong::draw(sf::RenderTarget &target, sf::RenderStates states) const {
