@@ -5,7 +5,7 @@
 #ifndef FINALPROJECT_TOPHATGUYCOMPONENT_H
 #define FINALPROJECT_TOPHATGUYCOMPONENT_H
 
-#include "AppComponent.h"
+#include "Application/AppComponent.h"
 #include "topHatGuy.h"
 
 class topHatGuyComponent: public AppComponent{

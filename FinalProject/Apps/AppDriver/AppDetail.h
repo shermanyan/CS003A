@@ -5,7 +5,7 @@
 #ifndef FINALPROJECT_APPDETAIL_H
 #define FINALPROJECT_APPDETAIL_H
 #include "AppsEnum.h"
-#include "Textures.h"
+#include "Tools/Textures.h"
 #include <string>
 #include <SFML/Graphics.hpp>
 

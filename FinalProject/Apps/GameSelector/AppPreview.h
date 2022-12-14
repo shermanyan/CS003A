@@ -5,13 +5,13 @@
 #ifndef FINALPROJECT_APPPREVIEW_H
 #define FINALPROJECT_APPPREVIEW_H
 #include <SFML/Graphics.hpp>
-#include "SpriteImage.h"
+#include "Tools/SpriteImage.h"
 #include "AppsEnum.h"
-#include "Textures.h"
-#include "Fonts.h"
-#include "Position.h"
+#include "Tools/Textures.h"
+#include "Tools/Fonts.h"
+#include "Tools/Position.h"
 #include <string>
-#include "MouseEvents.h"
+#include "Tools/MouseEvents.h"
 #include "AppDetail.h"
 
 class AppPreview: public sf::Drawable, public sf::Transformable {

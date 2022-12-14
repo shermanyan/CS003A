@@ -6,7 +6,7 @@
 #define FINALPROJECT_PONG_H
 
 
-#include "AppComponent.h"
+#include "Application/AppComponent.h"
 #include "PingPongBall.h"
 #include "Paddle.h"
 

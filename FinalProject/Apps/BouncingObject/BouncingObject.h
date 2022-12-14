@@ -4,8 +4,8 @@
 
 #ifndef FINALPROJECT_BOUNCINGOBJECT_H
 #define FINALPROJECT_BOUNCINGOBJECT_H
-#include "DisplayableApplication.h"
-#include "States.h"
+#include "Application/DisplayableApplication.h"
+#include "Tools/States.h"
 #include "statesEnum.h"
 
 template<class T>

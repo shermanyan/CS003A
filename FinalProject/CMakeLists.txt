@@ -17,9 +17,9 @@ include_directories(Apps/Pong)
 include_directories(Apps/TopHatGuy)
 include_directories(Resources)
 include_directories(Resources/enums)
-include_directories(SFMLGame)
-include_directories(SFMLGame/ButtonComponent)
-include_directories(SFMLGame/Buttons)
+include_directories(Resources/SFMLGame)
+include_directories(Resources/ButtonComponent)
+include_directories(Resources/Buttons)
 
 add_executable(FinalProject
         Apps/AppDriver/AppDriver.cpp
@@ -85,34 +85,34 @@ add_executable(FinalProject
         Resources/enums/FontsEnum.h
         Resources/enums/statesEnum.h
         Resources/enums/TexturesEnum.h
-        Resources/Fonts.cpp
-        Resources/Fonts.h
-        Resources/States.cpp
-        Resources/States.h
-        Resources/Textures.cpp
-        Resources/Textures.h
-        SFMLGame/ButtonComponent/AppSwitchButton.cpp
-        SFMLGame/ButtonComponent/AppSwitchButton.h
-        SFMLGame/Buttons/ButtonBase.cpp
-        SFMLGame/Buttons/ButtonBase.h
+        Resources/Tools/Fonts.cpp
+        Resources/Tools/Fonts.h
+        Resources/Tools/States.cpp
+        Resources/Tools/States.h
+        Resources/Tools/Textures.cpp
+        Resources/Tools/Textures.h
+        Resources/ButtonComponent/AppSwitchButton.cpp
+        Resources/ButtonComponent/AppSwitchButton.h
+        Resources/Buttons/ButtonBase.cpp
+        Resources/Buttons/ButtonBase.h
         Apps/GameSelector/AppPreview.cpp
         Apps/GameSelector/AppPreview.h
-        SFMLGame/Buttons/HomeButton.cpp
-        SFMLGame/Buttons/HomeButton.h
-        SFMLGame/AppComponent.h
-        SFMLGame/DisplayableApplication.cpp
-        SFMLGame/DisplayableApplication.h
-        SFMLGame/EventHandleable.h
-        SFMLGame/MouseEvents.cpp
-        SFMLGame/MouseEvents.h
-        SFMLGame/Position.cpp
-        SFMLGame/Position.h
-        SFMLGame/ScrollableContainer.cpp
-        SFMLGame/ScrollableContainer.h
-        SFMLGame/ScrollEnum.h
-        SFMLGame/SpriteImage.cpp
-        SFMLGame/SpriteImage.h
-        SFMLGame/Updatable.h
+        Resources/Buttons/HomeButton.cpp
+        Resources/Buttons/HomeButton.h
+        Resources/Application/AppComponent.h
+        Resources/Application/DisplayableApplication.cpp
+        Resources/Application/DisplayableApplication.h
+        Resources/Application/EventHandleable.h
+        Resources/Tools/MouseEvents.cpp
+        Resources/Tools/MouseEvents.h
+        Resources/Tools/Position.cpp
+        Resources/Tools/Position.h
+        Resources/ScrollableContainer/ScrollableContainer.cpp
+        Resources/ScrollableContainer/ScrollableContainer.h
+        Resources/ScrollableContainer/ScrollEnum.h
+        Resources/Tools/SpriteImage.cpp
+        Resources/Tools/SpriteImage.h
+        Resources/Application/Updatable.h
         main.cpp Apps/GameSelector/DetailedAppPreview.cpp Apps/GameSelector/DetailedAppPreview.h Apps/AppDriver/AppDetail.cpp Apps/AppDriver/AppDetail.h Apps/GameSelector/Play.cpp Apps/GameSelector/Play.h)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)

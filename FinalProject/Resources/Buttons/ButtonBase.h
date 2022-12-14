@@ -5,8 +5,8 @@
 #ifndef FINALPROJECT_BUTTONBASE_H
 #define FINALPROJECT_BUTTONBASE_H
 #include "SFML/Graphics.hpp"
-#include "AppComponent.h"
-#include "MouseEvents.h"
+#include "Application/AppComponent.h"
+#include "Tools/MouseEvents.h"
 
 template<class T>
 class ButtonBase: public T{

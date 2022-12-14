@@ -4,7 +4,7 @@
 
 #ifndef FINALPROJECT_APP_POKERANALYSIS_H
 #define FINALPROJECT_APP_POKERANALYSIS_H
-#include "DisplayableApplication.h"
+#include "Application/DisplayableApplication.h"
 #include "PokerAnalysisDisplay.h"
 #include "Analysis.h"
 

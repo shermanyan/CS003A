@@ -8,7 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include "AppComponent.h"
 #include "Buttons/HomeButton.h"
-#include "MouseEvents.h"
+#include "Tools/MouseEvents.h"
 
 class DisplayableApplication{
 private:

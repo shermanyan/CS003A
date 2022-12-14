@@ -6,13 +6,13 @@
 #define FINALPROJECT_DETAILEDAPPPREVIEW_H
 
 #include <SFML/Graphics.hpp>
-#include "SpriteImage.h"
+#include "Tools/SpriteImage.h"
 #include "AppsEnum.h"
 #include <string>
-#include "States.h"
+#include "Tools/States.h"
 #include "AppDetail.h"
-#include "Fonts.h"
-#include "Position.h"
+#include "Tools/Fonts.h"
+#include "Tools/Position.h"
 
 class DetailedAppPreview: public sf::Drawable, public sf::Transformable, public States{
 private:

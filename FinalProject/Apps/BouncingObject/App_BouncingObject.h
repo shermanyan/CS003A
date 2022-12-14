@@ -4,7 +4,7 @@
 
 #ifndef FINALPROJECT_APP_BOUNCINGOBJECT_H
 #define FINALPROJECT_APP_BOUNCINGOBJECT_H
-#include "DisplayableApplication.h"
+#include "Application/DisplayableApplication.h"
 #include "BouncingObject.h"
 #include "Ball.h"
 #include "AppSwitchButton.h"

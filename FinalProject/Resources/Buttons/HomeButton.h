@@ -5,8 +5,8 @@
 #ifndef FINALPROJECT_HOMEBUTTON_H
 #define FINALPROJECT_HOMEBUTTON_H
 #include "SFML/Graphics.hpp"
-#include "Textures.h"
-#include "SpriteImage.h"
+#include "Tools/Textures.h"
+#include "Tools/SpriteImage.h"
 
 
 class HomeButton : public SpriteImage{

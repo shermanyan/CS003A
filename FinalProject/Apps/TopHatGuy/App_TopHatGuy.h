@@ -4,7 +4,7 @@
 
 #ifndef FINALPROJECT_APP_TOPHATGUY_H
 #define FINALPROJECT_APP_TOPHATGUY_H
-#include "DisplayableApplication.h"
+#include "Application/DisplayableApplication.h"
 #include "topHatGuyComponent.h"
 
 class App_TopHatGuy: public DisplayableApplication {

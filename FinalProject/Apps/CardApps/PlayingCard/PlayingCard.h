@@ -4,9 +4,9 @@
 
 #ifndef FINALPROJECT_PLAYINGCARD_H
 #define FINALPROJECT_PLAYINGCARD_H
-#include "AppComponent.h"
+#include "Application/AppComponent.h"
 #include "DrawableCard.h"
-#include "MouseEvents.h"
+#include "Tools/MouseEvents.h"
 
 class PlayingCard: public AppComponent{
 private:

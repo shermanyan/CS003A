@@ -7,8 +7,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "AppsEnum.h"
-#include "AppComponent.h"
-#include "States.h"
+#include "Application/AppComponent.h"
+#include "Tools/States.h"
 #include "statesEnum.h"
 
 template<class T>
