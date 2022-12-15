@@ -8,10 +8,10 @@
 TrashGenerator::TrashGenerator() {
 
 }
-void TrashGenerator::generate(const sf::RenderWindow &window,const sf::Clock& clock) {
+void TrashGenerator::generate(const sf::FloatRect& bound,const sf::Clock& clock) {
 
     if (clock.getElapsedTime().asMilliseconds() % (int)(1000*generationSpeed) == 0  && trash.size() < maxTrash + 1) {
-        sf::Vector2f pos = {(float) (rand() % window.getSize().x - 50), (float) (rand() % window.getSize().y - 50)};
+        sf::Vector2f pos = {(float) (rand() % (int)bound.width) + bound.left, (float) (rand() % (int)bound.height) + bound.top};
         trash.emplace_back(pos);
     }
 

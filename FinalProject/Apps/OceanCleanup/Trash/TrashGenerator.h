@@ -22,7 +22,7 @@ private:
     void updateTime(const sf::Clock& clock);
 public:
     TrashGenerator();
-    void generate(const sf::RenderWindow& window,const sf::Clock& clock);
+    void generate(const sf::FloatRect& bound, const sf::Clock& clock);
 
     void setMaxTrash(unsigned int max);
     void increaseGenerationSpeed();

@@ -27,7 +27,10 @@ std::string Fonts::getPath(FontsEnum font) {
             return "Resources/fonts/TitanOne-Regular.ttf";;
         case LILITA_ONE:
             return "Resources/fonts/LilitaOne-Regular.ttf";;
-
+        case RUBIK_GEMSTONES:
+            return "Resources/fonts/RubikGemstones-Regular.ttf";
+        case LAST_FONT:
+            break;
     }
 }
 

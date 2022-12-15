@@ -51,6 +51,10 @@ float Vessel::getSign(float number) {
     return number > 0? 1:-1;
 }
 
+unsigned int Vessel::getEatNumber() {
+    return foodEaten;
+}
+
 
 
 

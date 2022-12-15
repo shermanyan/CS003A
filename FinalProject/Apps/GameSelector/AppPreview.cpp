@@ -26,7 +26,7 @@ void AppPreview::hover(const sf::RenderWindow& window) {
     else {
         img.setColor(sf::Color::White);
         border.setOutlineColor({100,100,100});
-        border.setOutlineThickness(2);
+        border.setOutlineThickness(1);
         selected = false;
     }
 }

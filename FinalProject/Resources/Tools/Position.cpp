@@ -21,8 +21,8 @@ void Position::right(T& self,const S& ref, float spacing) {
 
 template<class T, class S>
 void Position::center(T& self, const S& ref) {
-    sf::FloatRect s = self.getLocalBounds();
-    sf::FloatRect r = ref.getLocalBounds();
+    sf::FloatRect s = self.getGlobalBounds();
+    sf::FloatRect r = ref.getGlobalBounds();
     self.setPosition({s.left - ((s.left + s.width/2) - (r.left + r.width/2)),
                       s.top - ((s.top + s.height/2) - (r.top + r.height/2))});
 }

@@ -9,5 +9,6 @@ enum FontsEnum{
     SONO_BOLD,
     TITAN_ONE,
     LILITA_ONE,
+    RUBIK_GEMSTONES,
     LAST_FONT
 };

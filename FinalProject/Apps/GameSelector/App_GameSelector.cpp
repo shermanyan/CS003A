@@ -5,7 +5,7 @@
 #include "App_GameSelector.h"
 
 App_GameSelector::App_GameSelector():
-DisplayableApplication("Home", sf::Color(61, 59, 51)) {
+DisplayableApplication("Home",{30,30,30}) {
     addComponent(g);
     disableExit();
 }

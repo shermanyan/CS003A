@@ -29,8 +29,6 @@ void GameSelector::eventHandler(sf::RenderWindow &window, const sf::Event &event
 
         if (MouseEvents::isClick(previews.at(AppsEnum(i)),window)) {
             detailedPreview.update(AppsEnum(i));
-            detailedPreview.setState(HIDDEN,false);
-            play.setState(HIDDEN, false);
         }
 
     }
@@ -52,6 +50,7 @@ void GameSelector::update(const sf::RenderWindow &window) {
     detailedPreview.setBackgroundWidth(window.getSize().x);
     skirt.setPosition(0,window.getSize().y - skirt.getGlobalBounds().height);
     skirt.setSize((sf::Vector2f)window.getSize());
+
 }
 
 GameSelector::GameSelector() {
@@ -62,16 +61,18 @@ GameSelector::GameSelector() {
         container.addComponent(&previews.at(AppsEnum(i)));
     }
     sf::FloatRect cSize = container.getGlobalBounds();
-    container.setPosition(50,windowSize.y - cSize.height - margins);
+    container.setPosition(margins,windowSize.y - cSize.height - margins);
+    container.setItemSpacing(10);
 
     detailedPreview.setPosition(80,80);
-    detailedPreview.setState(HIDDEN,true);
+    detailedPreview.setState(HIDDEN,false);
+    detailedPreview.update(APP_GREEN_BALL);
 
-    play.setState(HIDDEN,true);
+    play.setState(HIDDEN, false);
     setPlayButtonPos();
 
     skirt.setTexture(Textures::getTexture(SKIRT));
-    skirt.setColor({100, 100, 100});
+    skirt.setColor({10,10,10});
 }
 
 void GameSelector::resetView(sf::RenderWindow& window) {

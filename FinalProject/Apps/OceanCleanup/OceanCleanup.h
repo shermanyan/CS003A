@@ -8,13 +8,18 @@
 #include "AppComponent.h"
 #include "Trash/TrashGenerator.h"
 #include "Vessel.h"
+#include "Fonts.h"
+#include "Position.h"
 
 class OceanCleanup: public AppComponent {
 private:
     TrashGenerator trashGenerator;
     Vessel boat;
     sf::Clock clock;
-    sf::Text Score;
+    sf::Clock boostTime;
+    sf::Text scoreText;
+    sf::Text gameTitle;
+
 public:
     OceanCleanup();
 

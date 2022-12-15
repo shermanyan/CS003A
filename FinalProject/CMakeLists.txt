@@ -14,7 +14,6 @@ include_directories(Apps/CardApps/PokerHands)
 include_directories(Apps/GameSelector)
 include_directories(Apps/GreenBall)
 include_directories(Apps/OceanCleanup)
-include_directories(Apps/OceanCleanup/future)
 include_directories(Apps/Pong)
 include_directories(Apps/TopHatGuy)
 include_directories(Resources/Application)
@@ -79,8 +78,6 @@ add_executable(FinalProject
         Apps/GreenBall/App_GreenBall.h
         Apps/GreenBall/GreenBall.cpp
         Apps/GreenBall/GreenBall.h
-        Apps/OceanCleanup/future/base.cpp
-        Apps/OceanCleanup/future/base.h
         Apps/OceanCleanup/App_OceanCleanup.cpp
         Apps/OceanCleanup/App_OceanCleanup.h
         Apps/OceanCleanup/OceanCleanup.cpp

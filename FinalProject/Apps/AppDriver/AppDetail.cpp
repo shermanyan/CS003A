@@ -59,7 +59,7 @@ std::string AppDetail::getAppSummary(AppsEnum app) {
         case APP_POKER_ANALYSIS:
             return "Displaying Calculated Statistics with SFML";
         case APP_OCEAN_CLEANUP:
-            return "Final Game!";
+            return "Final Game! Collect trash and clean our ocean";
         case APP_LAST_APP:
             return "";
     }

@@ -14,7 +14,7 @@
 #include "Play.h"
 class GameSelector: public AppComponent{
 private:
-    float margins = 50;
+    float margins = 20;
 
     Play play;
     SpriteImage skirt;
