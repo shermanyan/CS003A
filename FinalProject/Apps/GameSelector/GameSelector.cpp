@@ -62,7 +62,7 @@ GameSelector::GameSelector() {
     }
     sf::FloatRect cSize = container.getGlobalBounds();
     container.setPosition(margins,windowSize.y - cSize.height - margins);
-    container.setItemSpacing(10);
+    container.setItemSpacing(margins);
 
     detailedPreview.setPosition(80,80);
     detailedPreview.setState(HIDDEN,false);
@@ -72,7 +72,7 @@ GameSelector::GameSelector() {
     setPlayButtonPos();
 
     skirt.setTexture(Textures::getTexture(SKIRT));
-    skirt.setColor({10,10,10});
+    skirt.setColor({25,25,25});
 }
 
 void GameSelector::resetView(sf::RenderWindow& window) {
@@ -82,10 +82,8 @@ void GameSelector::resetView(sf::RenderWindow& window) {
 }
 
 void GameSelector::setPlayButtonPos() {
-
     play.setPosition({80, 0});
     Position::top(play,container,80);
-
 }
 
 

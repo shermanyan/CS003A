@@ -25,8 +25,6 @@ void AppPreview::hover(const sf::RenderWindow& window) {
     }
     else {
         img.setColor(sf::Color::White);
-        border.setOutlineColor({100,100,100});
-        border.setOutlineThickness(1);
         selected = false;
     }
 }
@@ -34,10 +32,11 @@ void AppPreview::hover(const sf::RenderWindow& window) {
 void AppPreview::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
     target.draw(img,states);
-    target.draw(border,states);
 
     if(selected) {
         target.draw(appName,states);
+        target.draw(border,states);
+
     }
 }
 
