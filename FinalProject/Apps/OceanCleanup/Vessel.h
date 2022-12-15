@@ -12,13 +12,14 @@ class Vessel :public SpriteImage{
 
 private:
     static float MAX_SPEED;
-    float boost = 0.00001;
+    float boost = 0.000005;
     sf::Vector2f velocity = {0.0,0.0};
 
     float getSign(float number);
 public:
     Vessel();
     void move(const sf::RenderWindow& window);
+
     template<class T>
     void eat(std::vector<T>& food);
 

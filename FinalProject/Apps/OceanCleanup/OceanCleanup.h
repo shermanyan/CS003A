@@ -14,6 +14,7 @@ private:
     TrashGenerator trashGenerator;
     Vessel boat;
     sf::Clock clock;
+    sf::Text Score;
 public:
     OceanCleanup();
 

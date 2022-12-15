@@ -13,7 +13,7 @@ Vessel::Vessel() {
     sf::FloatRect p = getLocalBounds();
     setOrigin(p.left + p.width/2,p.top +p.height/2);
 
-    setSize({100, 100});
+    setWidth(180);
 }
 
 
@@ -25,7 +25,7 @@ void Vessel::move(const sf::RenderWindow& window) {
     }
     else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
 
-        speed += -boost/10;
+        speed += -boost/2;
     }
     if (!(abs(velocity.x) > 0.1 || abs(velocity.y) > 0.1)) {
         velocity.x += speed * sin(getRotation() * 3.14f / 180);
@@ -38,14 +38,11 @@ void Vessel::move(const sf::RenderWindow& window) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         rotate(0.05);
 
-
-    sf::FloatRect pos = getGlobalBounds();
-    if(pos.left + pos.width + velocity.x > window.getSize().x || pos.left + velocity.x < 0)
+    sf::Vector2f next = getPosition() + velocity ;
+    if(next.x >= window.getSize().x || next.x  <= 0)
         velocity.x = 0;
-    if(pos.top + pos.height + velocity.y > window.getSize().y || pos.top + velocity.y < 0)
+    if(next.y >= window.getSize().y || next.y  <= 0)
         velocity.y = 0;
-
-
 
     SpriteImage::move(velocity.x,velocity.y);
 }
