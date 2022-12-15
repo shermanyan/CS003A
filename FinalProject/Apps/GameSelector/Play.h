@@ -5,10 +5,10 @@
 #ifndef FINALPROJECT_PLAY_H
 #define FINALPROJECT_PLAY_H
 #include <SFML/Graphics.hpp>
-#include "Tools/Fonts.h"
-#include "Tools/States.h"
-#include "Tools/Position.h"
-#include "Tools/MouseEvents.h"
+#include "Fonts.h"
+#include "States.h"
+#include "Position.h"
+#include "MouseEvents.h"
 
 class Play: public sf::Drawable, public sf::Transformable, public States {
 private:

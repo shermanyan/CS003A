@@ -5,7 +5,7 @@
 #ifndef FINALPROJECT_FONTS_H
 #define FINALPROJECT_FONTS_H
 
-#include "enums/FontsEnum.h"
+#include "FontsEnum.h"
 #include <SFML/Graphics.hpp>
 #include <map>
 

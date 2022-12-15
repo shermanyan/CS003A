@@ -5,7 +5,7 @@
 #ifndef FINALPROJECT_TEXTURES_H
 #define FINALPROJECT_TEXTURES_H
 
-#include "enums/TexturesEnum.h"
+#include "TexturesEnum.h"
 #include <SFML/Graphics.hpp>
 #include <map>
 

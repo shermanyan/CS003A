@@ -18,8 +18,8 @@ int main()
     sf::Font font;
     font.loadFromFile("OpenSans-Bold.ttf");
 
-    sf::Text rotate;
-    rotate.setFont(font);
+//    sf::Text rotate;wwww
+    rotate.setFont(font)
 
     sf::Vector2f velocity = {0.0,0.0};
 
@@ -34,31 +34,7 @@ int main()
             }
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
-            velocity.x += 0.000008f * sin(dog.getRotation() * 3.14f/180);
-            velocity.y -= 0.000008f * cos(dog.getRotation()* 3.14f/180);
-        }
 
-        sf::FloatRect dPos = dog.getGlobalBounds();
-
-        if(dPos.left + dPos.width + velocity.x > window.getSize().x || dPos.left + velocity.x < 0)
-            velocity.x = 0;
-        if(dPos.top + dPos.height + velocity.y > window.getSize().y || dPos.top + velocity.y < 0)
-            velocity.y = 0;
-
-
-//        velocity.y += GRAVITY;
-
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
-            dog.setPosition(window.getSize().x / 2, 500);
-            velocity = {0,0};
-        }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-            dog.rotate(-0.05);
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-            dog.rotate(0.05);
-
-        dog.move(velocity.x,velocity.y);
 
 
         std::string rota = std::to_string(dog.getRotation()) ;

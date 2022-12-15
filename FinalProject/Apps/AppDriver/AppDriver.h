@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "AppsEnum.h"
-#include "Application/DisplayableApplication.h"
+#include "DisplayableApplication.h"
 
 class AppDriver {
 public:

@@ -4,7 +4,7 @@
 
 #ifndef FINALPROJECT_GREENBALL_H
 #define FINALPROJECT_GREENBALL_H
-#include "Application/AppComponent.h"
+#include "AppComponent.h"
 
 class GreenBall: public AppComponent{
 private:

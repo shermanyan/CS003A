@@ -39,6 +39,25 @@ std::string Textures::getPath(TextureEnums texture) {
             return "Resources/textures/gamePreviews/tophatguy.png";
         case SKIRT:
             return "Resources/textures/skirt.png";
+        case VESSEL:
+            return "Resources/textures/OceanCleanup/vessel.png";
+        case TRASH_1:
+            return "Resources/textures/OceanCleanup/Trash/trash1.png";
+        case TRASH_2:
+            return "Resources/textures/OceanCleanup/Trash/trash2.png";
+        case TRASH_3:
+            return "Resources/textures/OceanCleanup/Trash/trash3.png";
+        case TRASH_4:
+            return "Resources/textures/OceanCleanup/Trash/trash4.png";
+        case TRASH_5:
+            return "Resources/textures/OceanCleanup/Trash/trash5.png";
+        case TRASH_6:
+            return "Resources/textures/OceanCleanup/Trash/trash6.png";
+        case LAST_TRASH:
+            break;
+        case LAST_IMG:
+            break;
+
     }
 }
 

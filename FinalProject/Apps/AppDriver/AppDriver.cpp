@@ -10,6 +10,7 @@
 #include "App_PokerAnalysis.h"
 #include "App_TopHatGuy.h"
 #include "App_GameSelector.h"
+#include "App_OceanCleanup.h"
 
 void AppDriver::openApp(AppsEnum app, sf::RenderWindow &window) {
     switch (app) {
@@ -44,7 +45,7 @@ void AppDriver::openApp(AppsEnum app, sf::RenderWindow &window) {
             break;
         }
         case APP_OCEAN_CLEANUP:{
-            App_GreenBall a;
+            App_OceanCleanup a;
             a.run(window);
             break;
         }

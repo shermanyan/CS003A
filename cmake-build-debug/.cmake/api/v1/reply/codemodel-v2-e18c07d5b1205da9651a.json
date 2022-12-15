@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CS003A",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RPN::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RPN-Debug-3387de430ff053aa5866.json",
+					"name" : "RPN",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Stacks::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Stacks-Debug-2c5306b9669bb75472a3.json",
+					"name" : "Stacks",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pokerAnalysis::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pokerAnalysis-Debug-46bbd78efeb5b0498a34.json",
+					"name" : "pokerAnalysis",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/shermanyan/CLionProjects/CS003A/cmake-build-debug",
+		"source" : "/Users/shermanyan/CLionProjects/CS003A"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -6,8 +6,8 @@
 #define CS003A_CARD_H
 #include <SFML/Graphics.hpp>
 #include "Card.h"
-#include "Tools/Textures.h"
-#include "Tools/Fonts.h"
+#include "Textures.h"
+#include "Fonts.h"
 
 class DrawableCard : public sf::Drawable, public sf::Transformable, public Card{
 private:

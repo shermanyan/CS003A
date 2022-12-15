@@ -4,7 +4,7 @@
 
 #ifndef FINALPROJECT_APP_PLAYINGCARD_H
 #define FINALPROJECT_APP_PLAYINGCARD_H
-#include "Application/DisplayableApplication.h"
+#include "DisplayableApplication.h"
 #include "PlayingCard.h"
 
 class App_PlayingCard: public DisplayableApplication {

@@ -4,7 +4,7 @@
 
 #ifndef FINALPROJECT_APP_GREENBALL_H
 #define FINALPROJECT_APP_GREENBALL_H
-#include "Application/DisplayableApplication.h"
+#include "DisplayableApplication.h"
 #include "GreenBall.h"
 
 class App_GreenBall: public DisplayableApplication {

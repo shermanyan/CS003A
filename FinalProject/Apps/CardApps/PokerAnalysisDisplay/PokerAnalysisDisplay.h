@@ -6,7 +6,7 @@
 #define CS003A_POKERANALYSISDISPLAY_H
 #include <SFML/Graphics.hpp>
 #include "DrawablePokerHand.h"
-#include "Application/AppComponent.h"
+#include "AppComponent.h"
 
 class PokerAnalysisDisplay: public AppComponent {
 

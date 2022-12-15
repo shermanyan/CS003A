@@ -4,9 +4,9 @@
 
 #ifndef FINALPROJECT_GAMESELECTOR_H
 #define FINALPROJECT_GAMESELECTOR_H
-#include "Application/AppComponent.h"
-#include "Buttons/ButtonBase.h"
-#include "ScrollableContainer/ScrollableContainer.h"
+#include "AppComponent.h"
+#include "ButtonBase.h"
+#include "ScrollableContainer.h"
 #include <map>
 #include "AppDriver.h"
 #include "AppPreview.h"

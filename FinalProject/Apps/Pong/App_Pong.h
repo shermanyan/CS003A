@@ -6,7 +6,7 @@
 #define FINALPROJECT_APP_PONG_H
 
 
-#include "Application/DisplayableApplication.h"
+#include "DisplayableApplication.h"
 #include "Pong.h"
 
 class App_Pong: public DisplayableApplication{

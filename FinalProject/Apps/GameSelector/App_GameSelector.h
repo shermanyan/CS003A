@@ -5,7 +5,7 @@
 #ifndef FINALPROJECT_APP_GAMESELECTOR_H
 #define FINALPROJECT_APP_GAMESELECTOR_H
 
-#include "Application/DisplayableApplication.h"
+#include "DisplayableApplication.h"
 #include "GameSelector.h"
 class App_GameSelector: public DisplayableApplication{
 private:
