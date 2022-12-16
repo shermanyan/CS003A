@@ -14,11 +14,10 @@ include_directories(Apps/CardApps/PokerHands)
 include_directories(Apps/GameSelector)
 include_directories(Apps/GreenBall)
 include_directories(Apps/OceanCleanup)
+include_directories(Apps/OceanCleanup/Trash)
 include_directories(Apps/Pong)
 include_directories(Apps/TopHatGuy)
 include_directories(Resources/Application)
-include_directories(Resources/ButtonComponent)
-include_directories(Resources/Buttons)
 include_directories(Resources/enums)
 include_directories(Resources/ScrollableContainer)
 include_directories(Resources/Tools)
@@ -78,14 +77,14 @@ add_executable(FinalProject
         Apps/GreenBall/App_GreenBall.h
         Apps/GreenBall/GreenBall.cpp
         Apps/GreenBall/GreenBall.h
+        Apps/OceanCleanup/Trash/Trash.cpp
+        Apps/OceanCleanup/Trash/Trash.h
+        Apps/OceanCleanup/Trash/TrashGenerator.cpp
+        Apps/OceanCleanup/Trash/TrashGenerator.h
         Apps/OceanCleanup/App_OceanCleanup.cpp
         Apps/OceanCleanup/App_OceanCleanup.h
         Apps/OceanCleanup/OceanCleanup.cpp
         Apps/OceanCleanup/OceanCleanup.h
-        Apps/OceanCleanup/Score.cpp
-        Apps/OceanCleanup/Score.h
-        Apps/OceanCleanup/Trash/Trash.cpp
-        Apps/OceanCleanup/Trash/Trash.h
         Apps/OceanCleanup/Vessel.cpp
         Apps/OceanCleanup/Vessel.h
         Apps/Pong/App_Pong.cpp
@@ -106,13 +105,9 @@ add_executable(FinalProject
         Resources/Application/DisplayableApplication.cpp
         Resources/Application/DisplayableApplication.h
         Resources/Application/EventHandleable.h
+        Resources/Application/HomeButton.cpp
+        Resources/Application/HomeButton.h
         Resources/Application/Updatable.h
-        Resources/ButtonComponent/AppSwitchButton.cpp
-        Resources/ButtonComponent/AppSwitchButton.h
-        Resources/Buttons/ButtonBase.cpp
-        Resources/Buttons/ButtonBase.h
-        Resources/Buttons/HomeButton.cpp
-        Resources/Buttons/HomeButton.h
         Resources/enums/FontsEnum.h
         Resources/enums/statesEnum.h
         Resources/enums/TexturesEnum.h
@@ -131,8 +126,7 @@ add_executable(FinalProject
         Resources/Tools/States.h
         Resources/Tools/Textures.cpp
         Resources/Tools/Textures.h
-        main.cpp Apps/OceanCleanup/Trash/TrashGenerator.cpp Apps/OceanCleanup/Trash/TrashGenerator.h)
-
+        main.cpp)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 target_link_libraries(FinalProject sfml-graphics)

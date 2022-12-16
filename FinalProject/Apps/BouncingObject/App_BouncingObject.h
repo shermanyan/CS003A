@@ -7,7 +7,6 @@
 #include "DisplayableApplication.h"
 #include "BouncingObject.h"
 #include "Ball.h"
-#include "AppSwitchButton.h"
 
 class App_BouncingObject: public DisplayableApplication{
 

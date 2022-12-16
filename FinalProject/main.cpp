@@ -19,8 +19,8 @@ int main() {
     sf::Text name;
     sf::Text start;
 
-    title.setString("CS003A Project Portfolio");
-    name.setString("Sherman Yan SID:10251199");
+    title.setString("Project Portfolio");
+    name.setString("Sherman Yan");
     start.setString("START");
 
     title.setCharacterSize(100);
