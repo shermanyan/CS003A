@@ -1,0 +1,4 @@
+# ninja log v5
+0	287	1674669957111769968	CMakeFiles/template_example.dir/bootlegVector.cpp.o	1130e5a331a2a4df
+1	316	1674669957140678110	CMakeFiles/template_example.dir/bootlegVector_main.cpp.o	8d560e1e1f25d5a7
+316	348	1674669957174101680	template_example	843a35155fb063af

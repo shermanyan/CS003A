@@ -16,8 +16,10 @@ public:
     void push(T item);
     T pop();
     T top();
+
     unsigned int size();
     bool isEmpty();
+
 
 };
 

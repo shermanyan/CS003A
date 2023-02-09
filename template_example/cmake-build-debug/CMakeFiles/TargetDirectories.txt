@@ -1,0 +1,3 @@
+/Users/shermanyan/CLionProjects/CS003A/template_example/cmake-build-debug/CMakeFiles/template_example.dir
+/Users/shermanyan/CLionProjects/CS003A/template_example/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/shermanyan/CLionProjects/CS003A/template_example/cmake-build-debug/CMakeFiles/rebuild_cache.dir
